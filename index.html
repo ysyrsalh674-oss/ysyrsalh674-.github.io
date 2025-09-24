@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>موقعي - عرض الخدمات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo-placeholder.png" alt="شعار" class="logo"/>
+        <span class="brand-name">اسم الشركة</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="قائمة">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">عنّا</a>
+        <a href="#services">الخدمات</a>
+        <a href="#portfolio">أعمالنا</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>حلول رقمية تُعزز عملك</h1>
+          <p>نقدّم خدمات تصميم وتطوير مواقع إلكترونية، حلول تسويق رقمي، واستشارات تقنية مخصّصة لاحتياجاتك.</p>
+          <a class="btn" href="#contact">اطلب عرض سعر</a>
+        </div>
+        <div class="hero-image">
+          <img src="hero-placeholder.png" alt="صورة رئيسية">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>من نحن</h2>
+        <p>فريق متخصص في تطوير الويب والتصميم، نضع خبرتنا لتقديم منتج نهائي واضح، سهل الاستخدام، ومتكيف مع أهداف عملك.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>خدماتنا</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>تصميم مواقع</h3>
+            <p>تصميم واجهات احترافية متوافقة مع الأجهزة المحمولة وسهلة الاستخدام.</p>
+          </article>
+          <article class="card">
+            <h3>تطوير ووردبريس</h3>
+            <p>مواقع قابلة للتحديث بنفسك مع تحسين سرعة وأمان الموقع.</p>
+          </article>
+          <article class="card">
+            <h3>تسويق رقمي</h3>
+            <p>استراتيجيات سيو وإعلانات ومحتوى يرفع من ظهورك ومبيعاتك.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2>أعمالنا</h2>
+        <div class="grid">
+          <div class="thumb"><img src="thumb1.png" alt="مشروع 1"></div>
+          <div class="thumb"><img src="thumb2.png" alt="مشروع 2"></div>
+          <div class="thumb"><img src="thumb3.png" alt="مشروع 3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>تواصل معنا</h2>
+        <form id="contactForm" novalidate>
+          <label for="name">الاسم</label>
+          <input id="name" name="name" type="text" required>
+          <label for="email">البريد الإلكتروني</label>
+          <input id="email" name="email" type="email" required>
+          <label for="message">الرسالة</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit" class="btn">إرسال</button>
+        </form>
+        <div class="contact-info">
+          <p>أو راسلنا مباشرة على: <a href="mailto:info@example.com">info@example.com</a></p>
+          <p>الجوال: +967 7X XXX XXXX</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> اسم الشركة — كل الحقوق محفوظه.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
